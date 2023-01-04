@@ -21,10 +21,9 @@ export default function ContactItem ({item}){
         setSelectedContact(null);
     };
 
-
    return ( <>
    {item.name}: {item.number}
-    <Div>
+    <Div >
     <Button type="button"  onClick={handleDelete}>Delete</Button>
     <Button type="button" onClick={handleOpenUpdateForm} >Update contact</Button>
     </Div>

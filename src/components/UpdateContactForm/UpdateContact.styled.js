@@ -1,11 +1,24 @@
 import styled from 'styled-components';
+
+export const Backdrop = styled.div`
+  overflow: auto;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 10000;
+` 
 export const Div = styled.div`
-width: 250px;
+padding: 10px;
+width: 300px;
 border: 1px #f95d9b solid;
 border-radius: 15px;
 background-color: white;
 position: absolute;
-right: 0;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
 z-index: 1;
 `
 export const ButtonClose = styled.button`
@@ -56,7 +69,7 @@ margin: 0;
 
 export const Button = styled.button`
 margin: 0 auto ;
-background-color: #f95d9b;;
+background-color: #f95d9b;
 color: white;
 cursor: pointer;
 font-family: 'Abel', sans-serif;
@@ -68,4 +81,14 @@ line-height: 25px;
    background-color: #9C40E3 ;
    color: white;
 }
+`
+export const P = styled.p`
+font-family: 'Abel', sans-serif;
+color:  #000000;
+font-size: 15px;
+margin: 5px 20px;
+`
+
+export const Span = styled.span`
+color: #f95d9b;
 `
