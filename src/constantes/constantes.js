@@ -20,4 +20,4 @@ export const fadeImages =[
         alt: "soulmate",
         caption : "with your soulmate"
     }
-]
+];

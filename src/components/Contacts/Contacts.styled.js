@@ -1,6 +1,9 @@
 import styled from 'styled-components';
+import {
+    TransitionGroup,
+  } from 'react-transition-group';
 
-export const Ul = styled.ul`
+export const Ul = styled(TransitionGroup)`
 margin: 0 ;
 margin-top: 50px;
 padding: 0;
@@ -11,7 +14,6 @@ flex-wrap: wrap;
 @media (max-width: 768px) {
     justify-content: center;
 }
-
 `
 export const Li = styled.li`
 position: relative;
@@ -57,3 +59,5 @@ border-radius: 13px;
     font-size: 15px;
 }
 `
+
+

@@ -4,7 +4,6 @@ import { Container, Form , Label, Input , Button} from "./LoginForm.styled";
 
 export default function LoginForm(){
     const dispatch = useDispatch();
-
     const handleSubmit = event =>{
         event.preventDefault();
         const userEmail = event.currentTarget.elements.userEmail.value;
